@@ -50,7 +50,7 @@ final class AmqpEventConsumerCallback
      * @param Queue $queue
      * @return DeliveryResult
      */
-    public function __invoke(Envelope $envelope, Queue $queue)
+    public function __invoke(Envelope $envelope, Queue $queue) : DeliveryResult
     {
         $data = json_decode($envelope->getBody(), true);
         $data['created_at'] = \DateTimeImmutable::createFromFormat('Y-m-d\TH:i:s.u', $data['created_at']);

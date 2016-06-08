@@ -81,7 +81,7 @@ final class AmqpMessageProducer implements MessageProducer
      * @param Message $message
      * @return array
      */
-    private function arrayFromMessage(Message $message)
+    private function arrayFromMessage(Message $message) : array
     {
         $messageData = $this->messageConverter->convertToArray($message);
 
