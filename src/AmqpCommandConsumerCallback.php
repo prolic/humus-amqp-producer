@@ -1,6 +1,6 @@
 <?php
 /*
- * This file is part of the prooph/psb-bernard-producer.
+ * This file is part of the prooph/humus-amqp-producer.
  * (c) 2016 prooph software GmbH <contact@prooph.de>
  * (c) 2016 Sascha-Oliver Prolic <saschaprolic@googlemail.com>
  *
@@ -20,7 +20,7 @@ use Prooph\ServiceBus\CommandBus;
 
 /**
  * Class AmqpCommandConsumerCallback
- * @package Dimabay\ServiceBus
+ * @package Prooph\ServiceBus\Message\HumusAmqp
  */
 final class AmqpCommandConsumerCallback
 {
